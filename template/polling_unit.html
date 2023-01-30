@@ -13,110 +13,129 @@
         grid-template-columns: repeat(9, 1fr);
       }
       h1{
-        font-size: 1.5rem;
+        font-size: 1.5re;
+      }
+      h4{
+        margin-left: -1rem;
+        border: 2px solid black;
+      }
+      li{
+        border:2px solid black
+      }
+      .votes{
+        display: grid;
+        place-items: center;
       }
     </style>
-    <div class="polling-unit">
-      <div class="polling-unit-wrapper">
-        <ul>
-          <li>PDP</li>
-          <li class="PDP">802</li>
-          <li class="PDP">1032</li>
-          <li class="PDP">298</li>
-          <li class="PDP">621</li>
-          <li class="PDP">1019</li>
-          <li class="PDP">804</li>
-        </ul>
+    <div class="votes">
+        <h2>Summed Total Results of all polling units</h2>
+        <div class="polling-unit">
+    
+          <div class="polling-unit-wrapper">
+      
+            <ol>
+              <h4>PDP</h4>
+              <li class="PDP">802</li>
+              <li class="PDP">1032</li>
+              <li class="PDP">298</li>
+              <li class="PDP">621</li>
+              <li class="PDP">1019</li>
+              <li class="PDP">804</li>
+              <h4 class="PDP-text"></h4>
+            </ol>
+    
+            <ol>
+              <h4>DPP</h4>
+              <li class="DPP">1254</li>
+              <li class="DPP">321</li>
+              <li class="DPP">833</li>
+              <li class="DPP">125</li>
+              <li class="DPP">219</li>
+              <li class="DPP">187</li>
+              <h4 class="DPP-text"></h4>
+            </ol>
+    
+            <ol>
+              <H4>ACN</H4>
+              <li class="ACN">124</li>
+              <li class="ACN">254</li>
+              <li class="ACN">94</li>
+              <li class="ACN">201</li>
+              <li class="ACN">1121</li>
+              <li class="ACN">213</li>
+              <h4 class="ACN-text"></h4>
+            </ol>
+            <ol>
+              <h4>PPA</h4>
+              <li class="PPA">122</li>
+              <li class="PPA">154</li>
+              <li class="PPA">324</li>
+              <li class="PPA">721</li>
+              <li class="PPA">289</li>
+              <li class="PPA">232</li>
+              <h4 class="PPA-text"></h4>
+            </ol>
+    
+            <ol>
+              <h4>CDC</h4>
+              <li class="CDC">142</li>
+              <li class="CDC">234</li>
+              <li class="CDC">214</li>
+              <li class="CDC">561</li>
+              <li class="CDC">839</li>
+              <li class="CDC">132</li>
+              <h4 class="CDC-text"></h4>
+            </ol>
+    
+            <ol>
+              <h4>JP</h4>
+              <li class="JP">122</li>
+              <li class="jp">154</li>
+              <li class="jp">324</li>
+              <li class="jp">721</li>
+              <li class="jp">289</li>
+              <li class="jp">232</li>
+              <h4 class="JP-text"></h4>
+            </ol>
+    
+            <ol>
+              <h4>ANPP</h4>
+              <li class="anpp">232</li>
+              <li class="anpp">1123</li>
+              <li class="anpp">234</li>
+              <li class="anpp">2243</li>
+              <li class="anpp">1344</li>
+              <li class="anpp">232</li>
+              <h4 class="ANPP-text"></h4>
+            </ol>
+    
+            <ol>
+              <h4>LABO</h4>
+              <li class="labo">123</li>
+              <li class="labo">433</li>
+              <li class="labo">234</li>
+              <li class="labo">743</li>
+              <li class="labo">1023</li>
+              <li class="labo">234</li>
+              <h4 class="LABO-text"></h4>
+            </ol>
+    
+            <ol>
+              <h4>CPP</h4>
+              <li class="cpp">343</li>
+              <li class="cpp">242</li>
+              <li class="cpp">432</li>
+              <li class="cpp">112</li>
+              <li class="cpp">2344</li>
+              <li class="cpp">245</li>
+              <h4 class="CPP-text"></h4>
+            </ol>
+          </div>
+    
+        </div>
 
-        <ul>
-          <li>DPP</li>
-          <li class="DPP">1254</li>
-          <li class="DPP">321</li>
-          <li class="DPP">833</li>
-          <li class="DPP">125</li>
-          <li class="DPP">219</li>
-          <li class="DPP">187</li>
-        </ul>
-
-        <ul>
-          <li>ACN</li>
-          <li class="ACN">124</li>
-          <li class="ACN">254</li>
-          <li class="ACN">94</li>
-          <li class="ACN">201</li>
-          <li class="ACN">1121</li>
-          <li class="ACN">213</li>
-        </ul>
-        <ul>
-          <li>PPA</li>
-          <li class="PPA">122</li>
-          <li class="PPA">154</li>
-          <li class="PPA">324</li>
-          <li class="PPA">721</li>
-          <li class="PPA">289</li>
-          <li class="PPA">232</li>
-        </ul>
-
-        <ul>
-          <li>CDC</li>
-          <li class="CDC">142</li>
-          <li class="CDC">234</li>
-          <li class="CDC">214</li>
-          <li class="CDC">561</li>
-          <li class="CDC">839</li>
-          <li class="CDC">132</li>
-        </ul>
-
-        <ul>
-          <li>JP</li>
-          <li class="JP">122</li>
-          <li class="jp">154</li>
-          <li class="jp">324</li>
-          <li class="jp">721</li>
-          <li class="jp">289</li>
-          <li class="jp">232</li>
-        </ul>
-
-        <ul>
-          <li>ANPP</li>
-          <li class="anpp">232</li>
-          <li class="anpp">1123</li>
-          <li class="anpp">234</li>
-          <li class="anpp">2243</li>
-          <li class="anpp">1344</li>
-          <li class="anpp">232</li>
-        </ul>
-
-        <ul>
-          <li>LABO</li>
-          <li class="labo">123</li>
-          <li class="labo">433</li>
-          <li class="labo">234</li>
-          <li class="labo">743</li>
-          <li class="labo">1023</li>
-          <li class="labo">234</li>
-        </ul>
-
-        <ul>
-          <li>CPP</li>
-          <li class="cpp">343</li>
-          <li class="cpp">242</li>
-          <li class="cpp">432</li>
-          <li class="cpp">112</li>
-          <li class="cpp">2344</li>
-          <li class="cpp">245</li>
-        </ul>
-      </div>
-      <h1 class="PDP-text"></h1>
-      <h1 class="DPP-text"></h1>
-      <h1 class="ACN-text">ff</h1>
-      <h1 class="PPA-text"></h1>
-      <h1 class="CDC-text"></h1>
-      <h1 class="JP-text"></h1>
-      <h1 class="ANPP-text"></h1>
-      <h1 class="LABO-text"></h1>
-      <h1 class="CPP-text"></h1>
     </div>
+  
 
     <script>
       const ACN = [].slice.call(document.querySelectorAll(".ACN"));
@@ -168,15 +187,15 @@
       CPP_text = document.querySelector('.CPP-text')
 
       console.log(ACN_text)
-      ACN_text.innerHTML = `The total sum of ACN votes is ${sum}`
-      PDP_text.innerHTML = `The total sum of PDP votes is ${sumForPdp}`
-      DPP_text.innerHTML = `The total sum of DPP votes is ${sumForDpp}`
-      PPA_text.innerHTML = `The total sum of PPA votes is ${sumForPpa}`
-      CDC_text.innerHTML = `The total sum of CDC votes is ${sumForCdc}`
-      JP_text.innerHTML = `The total sum of JP votes is ${sumForJp}`
-      ANPP_text.innerHTML = `The total sum of ANPP votes is ${sumForAnpp}`
-      LABO_text.innerHTML = `The total sum of LABO votes is ${sumForLabo}`
-      CPP_text.innerHTML = `The total sum of CPP votes is ${sumForCpp}`
+      ACN_text.innerHTML = `Total: ${sum}`
+      PDP_text.innerHTML = `Total : ${sumForPdp}`
+      DPP_text.innerHTML = `Total :  ${sumForDpp}`
+      PPA_text.innerHTML =  `Total : ${sumForPpa}`
+      CDC_text.innerHTML =  `Total : ${sumForCdc}`
+      JP_text.innerHTML = `Total : ${sumForJp}`
+      ANPP_text.innerHTML = `Total : ${sumForAnpp}`
+      LABO_text.innerHTML = `Total : ${sumForLabo}`
+      CPP_text.innerHTML =  `Total : ${sumForCpp}`
     </script>
   </body>
 </html>

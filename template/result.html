@@ -7,24 +7,50 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>S/N</th>
-            <th>Party</th>
-            <th>results</th>
-    
-        </tr>
-        <tr>
-            {% for result in results %}
 
-            <td>{{result.id}}</td>
-            <td>{{result.Party}}</td>
-            <td>{{result.Result}}</td>
+    <style>
+        .votes{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            font-size: 1.5rem;
+        }
+        .storage{
+            display: grid;
+            place-items: center;
+        }
+        ul{
+            list-style: none;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    </style>
+  
 
-            {% endfor %}
+    <div class="storage">
+        <h2>Input storage updates from the database</h2>
+        <div class="votes">
+           
+            <ol>
+                <h4>Party</h4>
+                {% for result in results %}
+                <li>{{result.Party}}</li>
+                {% endfor %}
+            </ol>
+            <ul>
+                <h4>Scores</h4>
+                {% for result in results %}
+                <li>{{result.Result}}</li>
+                {% endfor %}
+            </ul>
 
-        </tr>
-    </table>
+        </div>
+       
+       
+
+    </div>
+   
     
 </body>
 </html>
