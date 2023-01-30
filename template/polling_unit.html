@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .polling-unit-wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+      }
+      h1{
+        font-size: 1.5rem;
+      }
+    </style>
+    <div class="polling-unit">
+      <div class="polling-unit-wrapper">
+        <ul>
+          <li>PDP</li>
+          <li class="PDP">802</li>
+          <li class="PDP">1032</li>
+          <li class="PDP">298</li>
+          <li class="PDP">621</li>
+          <li class="PDP">1019</li>
+          <li class="PDP">804</li>
+        </ul>
+
+        <ul>
+          <li>DPP</li>
+          <li class="DPP">1254</li>
+          <li class="DPP">321</li>
+          <li class="DPP">833</li>
+          <li class="DPP">125</li>
+          <li class="DPP">219</li>
+          <li class="DPP">187</li>
+        </ul>
+
+        <ul>
+          <li>ACN</li>
+          <li class="ACN">124</li>
+          <li class="ACN">254</li>
+          <li class="ACN">94</li>
+          <li class="ACN">201</li>
+          <li class="ACN">1121</li>
+          <li class="ACN">213</li>
+        </ul>
+        <ul>
+          <li>PPA</li>
+          <li class="PPA">122</li>
+          <li class="PPA">154</li>
+          <li class="PPA">324</li>
+          <li class="PPA">721</li>
+          <li class="PPA">289</li>
+          <li class="PPA">232</li>
+        </ul>
+
+        <ul>
+          <li>CDC</li>
+          <li class="CDC">142</li>
+          <li class="CDC">234</li>
+          <li class="CDC">214</li>
+          <li class="CDC">561</li>
+          <li class="CDC">839</li>
+          <li class="CDC">132</li>
+        </ul>
+
+        <ul>
+          <li>JP</li>
+          <li class="JP">122</li>
+          <li class="jp">154</li>
+          <li class="jp">324</li>
+          <li class="jp">721</li>
+          <li class="jp">289</li>
+          <li class="jp">232</li>
+        </ul>
+
+        <ul>
+          <li>ANPP</li>
+          <li class="anpp">232</li>
+          <li class="anpp">1123</li>
+          <li class="anpp">234</li>
+          <li class="anpp">2243</li>
+          <li class="anpp">1344</li>
+          <li class="anpp">232</li>
+        </ul>
+
+        <ul>
+          <li>LABO</li>
+          <li class="labo">123</li>
+          <li class="labo">433</li>
+          <li class="labo">234</li>
+          <li class="labo">743</li>
+          <li class="labo">1023</li>
+          <li class="labo">234</li>
+        </ul>
+
+        <ul>
+          <li>CPP</li>
+          <li class="cpp">343</li>
+          <li class="cpp">242</li>
+          <li class="cpp">432</li>
+          <li class="cpp">112</li>
+          <li class="cpp">2344</li>
+          <li class="cpp">245</li>
+        </ul>
+      </div>
+      <h1 class="PDP-text"></h1>
+      <h1 class="DPP-text"></h1>
+      <h1 class="ACN-text">ff</h1>
+      <h1 class="PPA-text"></h1>
+      <h1 class="CDC-text"></h1>
+      <h1 class="JP-text"></h1>
+      <h1 class="ANPP-text"></h1>
+      <h1 class="LABO-text"></h1>
+      <h1 class="CPP-text"></h1>
+    </div>
+
+    <script>
+      const ACN = [].slice.call(document.querySelectorAll(".ACN"));
+      const sum = ACN.reduce(function (sum, el) {
+        return sum + parseFloat(el.innerText);
+      }, 0);
+      const PDP = [].slice.call(document.querySelectorAll(".PDP"));
+      const sumForPdp = PDP.reduce(function (sumForPdp, el) {
+        return sumForPdp + parseFloat(el.innerText);
+      }, 0);
+      const DPP = [].slice.call(document.querySelectorAll(".DPP"));
+      const sumForDpp = DPP.reduce(function (sumForDpp, el) {
+        return sumForDpp + parseFloat(el.innerText);
+      }, 0);
+      const PPA = [].slice.call(document.querySelectorAll(".PPA"));
+      const sumForPpa = PPA.reduce(function (sumForPpa, el) {
+        return sumForPpa + parseFloat(el.innerText);
+      }, 0);
+      const CDC = [].slice.call(document.querySelectorAll(".CDC"));
+      const sumForCdc = CDC.reduce(function (sumForCdc, el) {
+        return sumForCdc + parseFloat(el.innerText);
+      }, 0);
+      const JP = [].slice.call(document.querySelectorAll(".JP"));
+      const sumForJp = JP.reduce(function (sumForJp, el) {
+        return sumForJp + parseFloat(el.innerText);
+      }, 0);
+      const ANPP = [].slice.call(document.querySelectorAll(".anpp"));
+      const sumForAnpp = ANPP.reduce(function (sumForAnpp, el) {
+        return sumForAnpp + parseFloat(el.innerText);
+      }, 0);
+      const LABO = [].slice.call(document.querySelectorAll(".labo"));
+      const sumForLabo = LABO.reduce(function (sumForLabo, el) {
+        return sumForLabo + parseFloat(el.innerText);
+      }, 0);
+      const CPP = [].slice.call(document.querySelectorAll(".cpp"));
+      const sumForCpp = CPP.reduce(function (sumForCpp, el) {
+        return sumForCpp + parseFloat(el.innerText);
+      }, 0);
+
+      console.log(sum);
+      ACN_text = document.querySelector('.ACN-text')
+      PDP_text = document.querySelector('.PDP-text')
+      DPP_text = document.querySelector('.DPP-text')
+      PPA_text = document.querySelector('.PPA-text')
+      CDC_text = document.querySelector('.CDC-text')
+      JP_text = document.querySelector('.JP-text')
+      ANPP_text = document.querySelector('.ANPP-text')
+      LABO_text = document.querySelector('.LABO-text')
+      CPP_text = document.querySelector('.CPP-text')
+
+      console.log(ACN_text)
+      ACN_text.innerHTML = `The total sum of ACN votes is ${sum}`
+      PDP_text.innerHTML = `The total sum of PDP votes is ${sumForPdp}`
+      DPP_text.innerHTML = `The total sum of DPP votes is ${sumForDpp}`
+      PPA_text.innerHTML = `The total sum of PPA votes is ${sumForPpa}`
+      CDC_text.innerHTML = `The total sum of CDC votes is ${sumForCdc}`
+      JP_text.innerHTML = `The total sum of JP votes is ${sumForJp}`
+      ANPP_text.innerHTML = `The total sum of ANPP votes is ${sumForAnpp}`
+      LABO_text.innerHTML = `The total sum of LABO votes is ${sumForLabo}`
+      CPP_text.innerHTML = `The total sum of CPP votes is ${sumForCpp}`
+    </script>
+  </body>
+</html>
